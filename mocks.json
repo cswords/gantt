@@ -1,0 +1,163 @@
+{
+  "tickets": [
+    {
+      "key": "BUG-001",
+      "summary": "Test JIRA Ticket",
+      "status": "Closed",
+      "statustype": "end",
+      "url": "https://www.atlassian.com/software/jira",
+      "start_date": 1440475700,
+      "end_date": 1441771700,
+      "eta": 1441645200,
+      "deadline": 1441731600,
+      "release_date": 1441818000,
+      "remaining": 0,
+      "time_view": [
+        {
+          "type": "-",
+          "status": "Open",
+          "interval": 0,
+          "from": 1440475700,
+          "to": 1440734900
+        },
+        {
+          "type": "dev",
+          "status": "In Progress",
+          "interval": 33000,
+          "from": 1440734900,
+          "to": 1440994100
+        },
+        {
+          "type": "pm",
+          "status": "Awaiting Clarification",
+          "interval": 20000,
+          "from": 1440994100,
+          "to": 1441157663
+        },
+        {
+          "type": "dev",
+          "status": "In Progress",
+          "interval": 20000,
+          "from": 1441157663,
+          "to": 1441330463
+        },
+        {
+          "type": "qa",
+          "status": "In QA",
+          "interval": 3600,
+          "from": 1441330463,
+          "to": 1441416863
+        },
+        {
+          "type": "re",
+          "status": "Integrate to Release",
+          "interval": 3600,
+          "from": 1441416863,
+          "to": 1441771700
+        }
+      ],
+      "area_view": [
+        {
+          "type": "PM",
+          "time": 5000,
+          "percent": 25,
+          "class": 0
+        },
+        {
+          "type": "DEV",
+          "time": 200000,
+          "percent": 50,
+          "class": 0
+        },
+        {
+          "type": "QA",
+          "time": 4000,
+          "percent": 20,
+          "class": 0
+        },
+        {
+          "type": "RE",
+          "time": 1000,
+          "percent": 5,
+          "class": 0
+        },
+        {
+          "type": "END",
+          "time": 0,
+          "percent": 0,
+          "class": 0
+        }
+      ]
+    },
+    {
+      "key": "BUG-002",
+      "summary": "Test JIRA Ticket",
+      "status": "In QA",
+      "statustype": "qa",
+      "url": "https://www.atlassian.com/software/jira",
+      "start_date": 1440734900,
+      "end_date": 1441778900,
+      "eta": 1441685200,
+      "deadline": 1441778900,
+      "release_date": 1441818000,
+      "remaining": 0,
+      "time_view": [
+        {
+          "type": "-",
+          "status": "Open",
+          "interval": 0,
+          "from": 1440734900,
+          "to": 1440994100
+        },
+        {
+          "type": "dev",
+          "status": "In Progress",
+          "interval": 20000,
+          "from": 1440994100,
+          "to": 1441157663
+        },
+        {
+          "type": "qa",
+          "status": "In QA",
+          "interval": 7200,
+          "from": 1441157663,
+          "to": 1441778900
+        }
+      ],
+      "area_view": [
+        {
+          "type": "PM",
+          "time": 5000,
+          "percent": 25,
+          "class": 0
+        },
+        {
+          "type": "DEV",
+          "time": 200000,
+          "percent": 50,
+          "class": 0
+        },
+        {
+          "type": "QA",
+          "time": 70000,
+          "percent": 25,
+          "class": 0
+        },
+        {
+          "type": "RE",
+          "time": 0,
+          "percent": 0,
+          "class": 0
+        },
+        {
+          "type": "END",
+          "time": 0,
+          "percent": 0,
+          "class": 0
+        }
+      ]
+    }
+  ],
+  "start_date": 1440475447,
+  "end_date": 1441878900
+}

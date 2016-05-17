@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gantt Diagram</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+<div class="container">
+    <div class="legend">
+        <ul>
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--eta"></span> - ETA
+            </li>
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--deadline"></span> - Deadline
+            </li>
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--release"></span> - Release
+            </li>
+
+            <li class="legend__item legend__item--separator"></li>
+
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--pm"></span> - PM
+            </li>
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--dev"></span> - Dev
+            </li>
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--qa"></span> - QA
+            </li>
+            <li class="legend__item">
+                <span class="legend__item-icon legend__item-icon--re"></span> - RE
+            </li>
+        </ul>
+    </div>
+
+    <div class="cols">
+        <div id="tickets" class="col col--list list"
+             data-item-template="template-list-item">
+        </div>
+
+        <div id="graph" class="col col--graph graph"
+             data-item-template="template-graph-item"
+             data-stats-template="template-graph-stats">
+        </div>
+    </div>
+
+    <div class="switcher">
+        <a href="#area" class="switcher__link">Area View</a>
+        <a href="#time" class="switcher__link">Time View</a>
+    </div>
+</div>
+
+<div class="preloader"></div>
+
+
+<script type="text/template" id="template-list-item">
+    <li class="list__item" data-id="{{key}}">
+        <a target="_blank" href="{{url}}">
+            <span class="list__item-status list__item-status--{{statustype}}" title="{{status}}"></span>
+            <span class="list__item-title">{{key}}</span>
+        </a>
+        <div class="list__item-summary">{{summary}}</div>
+    </li>
+</script>
+
+<script type="text/template" id="template-graph-item">
+    <li class="graph__item" id="{{key}}"></li>
+</script>
+
+<scrypt type="text/template" id="template-graph-stats">
+    <span class="graph_item-stats graph_item-stats--{{type}} {{class}}"></span>
+</scrypt>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
